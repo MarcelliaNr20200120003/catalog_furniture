@@ -20,6 +20,8 @@ class Body extends StatelessWidget {
             onChanged: (value) {},
           ),
           Container(
+            height: 220,
+            width: double.infinity,
             child: CarouselSlider(
               options: CarouselOptions(),
               items: imageSliders,
@@ -69,11 +71,12 @@ class Body extends StatelessWidget {
 }
 
 final List<String> imgList = [
-  'https://s.id/1yOlL',
-  'https://id.pinterest.com/pin/553028029258839599/',
-  'https://id.pinterest.com/pin/553028029258839599/',
-  'https://id.pinterest.com/pin/553028029258839599/',
-  'https://id.pinterest.com/pin/553028029258839599/',
+  'https://images.pexels.com/photos/6430742/pexels-photo-6430742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.unsplash.com/photo-1609510368600-883b7f16d121?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80',
+  'https://media.istockphoto.com/id/1363661385/id/foto/ruang-tamu-bergaya-boho-dengan-kursi-anyaman-sofa-meja-dan-pampas-di-pot-dengan-latar-belakang.webp?s=612x612&w=is&k=20&c=sKb3gnmBCX0hOdsnDO71PxReGP_CjCqSZAXqE8n7EVQ=',
+  'https://images.pexels.com/photos/12715506/pexels-photo-12715506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/12713220/pexels-photo-12713220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/12617137/pexels-photo-12617137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 ];
 
 final List<Widget> imageSliders = imgList
@@ -84,7 +87,11 @@ final List<Widget> imageSliders = imgList
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
                 child: Stack(
                   children: <Widget>[
-                    Image.network(item, fit: BoxFit.cover, width: 600.0),
+                    Image.network(
+                      item,
+                      fit: BoxFit.cover,
+                      width: 400,
+                    ),
                     Positioned(
                       bottom: 0.0,
                       left: 0.0,
