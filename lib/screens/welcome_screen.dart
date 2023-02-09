@@ -52,7 +52,7 @@ class GetStartedScreen extends StatelessWidget {
                       padding: EdgeInsets.only(top: 50, left: 29, right: 20),
                       child: Text(
                         "Make your home a minimalist look at an affordable price",
-                        style: GoogleFonts.acme(
+                        style: GoogleFonts.amethysta(
                           fontSize: 15,
                           color: Colors.grey,
                         ),
