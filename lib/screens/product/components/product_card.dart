@@ -1,3 +1,4 @@
+import 'package:catalog_furniture/screens/details/details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:catalog_furniture/models/product.dart';
 
@@ -27,7 +28,15 @@ class ProductCard extends StatelessWidget {
       // color: Colors.blueAccent,
       height: 160,
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => DetailsScreen(
+                      product: product,
+                    )),
+          );
+        },
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: <Widget>[
